@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration System</title>
+  <meta
+    name="description"
+    content="A system for student registration with functionalities for adding, editing, and deleting student records."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Student Enrollment Dashboard</h1>
+        <p>Manage student registrations with ease. Add, edit, and delete student records effortlessly.</p>
+      </header>
+      
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#registered">View Student Records</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="addStudent">
+      <div class="container">
+        <h2>Student Enrollment</h2>
+        <form id="studentForm">
+          <label for="name">Student Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="student_id">Student ID:</label>
+          <input
+            type="text"
+            id="student_id"
+            name="student_id"
+            required
+            pattern="[0-9]*"
+          />
+
+          <label for="class">Class:</label>
+          <input type="text" id="class" name="class" required />
+
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="contact">Contact No.:</label>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            required
+            pattern="[0-9]*"
+          />
+
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+
+          <input type="submit" value="Save Record" />
+        </form>
+      </div>
+    </section>
+
+    <section id="registered">
+      <div class="container">
+        <h2>Registered Students</h2>
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Student ID</th>
+              <th>Class</th>
+              <th>Email ID</th>
+              <th>Contact No.</th>
+              <th>Address</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentTableBody">
+            <!-- Student records will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
