@@ -1,0 +1,5 @@
+Student Registration Deployment Links:
+
+GitHub - https://github.com/Vedang914/Student-Registration-Assignment
+
+Netlify Link - https://6671d3a183621c2e66373d52--peaceful-lily-f4a13e.netlify.app/#registered
